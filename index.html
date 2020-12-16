@@ -13,7 +13,7 @@
   <body>
 
     <ul id="mails_list" v-if="emails.length == 10">
-      <li v-for="email in emails">{{ email }}</li>
+      <li v-for="(email,index) in emails">{{ (index+1) }} {{ email }}</li>
     </ul>
 
     <script src="js/script.js" charset="utf-8"></script>
