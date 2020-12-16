@@ -6,11 +6,12 @@ var app = new Vue (
       colors: []
     }, //fine data
     methods: {
+
       colorGenerator: function() {
         var hexadecimalNumber = "#";
         for(var i = 0; i < 6; i++) {
           var number = Math.floor(Math.random()*(9-0+1)+0).toString();
-          hexadecimalNumber += number
+          hexadecimalNumber += number;
         };
         return hexadecimalNumber;
       }
@@ -22,18 +23,28 @@ var app = new Vue (
         axios
         .get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then( (result) => {
-          this.emails.push(result.data.response);
+          this.emails.push(
+              {
+                nome: "NOME",
+                cognome: "COGNOME",
+                email: result.data.response
+              }
+
+            );
           }
         );
       }
 
     }, //fine mounted
     created: function() {
+
       for (var i = 0; i < 10; i++) {
         var newColor = this.colorGenerator();
         this.colors.push(newColor);
       }
-    }
+      console.log(this.colors);
+
+    } //fine created
 
   } //fine vue
 );

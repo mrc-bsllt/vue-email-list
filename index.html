@@ -15,9 +15,9 @@
     <ul id="mails_list" v-if="emails.length == 10">
       <li><h1>Lista Email</h1></li>
       <li
-        v-for="(email,index) in emails"
+        v-for="(contact,index) in emails"
         :style='"background-color:" + (colors[index]) + ";"'>
-        {{ (index+1) }} {{ email }}
+        {{ (index+1) }} {{ contact.email }} {{ contact.nome }} {{ contact.cognome }}
       </li>
     </ul>
 
