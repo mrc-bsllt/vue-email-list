@@ -4,16 +4,16 @@ var app = new Vue (
     data: {
       emails: [],
       colors: [
-        "orange",
-        "yellow",
-        "green",
-        "blue",
-        "pink",
-        "lime",
-        "grey",
-        "lightblue",
-        "red",
-        "violet"
+        "#b26f64",
+        "#5795dc",
+        "#791558",
+        "#73c9bd",
+        "#9868ac",
+        "#9c9d41",
+        "#476402",
+        "#a73652",
+        "#7fce2d",
+        "#feb509"
       ]
     }, //fine data
     methods: {
