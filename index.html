@@ -13,7 +13,10 @@
   <body>
 
     <ul id="mails_list" v-if="emails.length == 10">
-      <li v-for="(email,index) in emails">{{ (index+1) }} {{ email }}</li>
+      <li><h1>Lista Email</h1></li>
+      <li v-for="(email,index) in emails" :style='"background-color:" + (colors[index]) + ";"'>
+        {{ (index+1) }} {{ email }}
+      </li>
     </ul>
 
     <script src="js/script.js" charset="utf-8"></script>

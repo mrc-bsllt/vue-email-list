@@ -2,7 +2,19 @@ var app = new Vue (
   {
     el: "#mails_list",
     data: {
-      emails: []
+      emails: [],
+      colors: [
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "pink",
+        "lime",
+        "grey",
+        "lightblue",
+        "red",
+        "violet"
+      ]
     }, //fine data
     methods: {
 
